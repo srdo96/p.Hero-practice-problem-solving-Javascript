@@ -1,4 +1,4 @@
-// task1: find small Number form array
+// task:1 find small Number form array
 
 function getSmallNum(numList) {
   let smallNum = numList[0];
@@ -28,3 +28,18 @@ if (num1 < num2) {
     console.log("Small Num: ", num2);
   } else console.log("Small Num: ", num3);
 }
+
+// task:3 find avg from an array
+
+function getAvg(numList) {
+  let sum = 0;
+  for (let i = 0; i < numList.length; i++) {
+    sum += numList[i];
+  }
+  let avg = sum / numList.length;
+  return avg;
+}
+
+list = [20, 43, 98, 13, 59, 5];
+let avg = getAvg(list);
+console.log("Avg of array: ", avg);
