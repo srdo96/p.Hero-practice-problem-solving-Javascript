@@ -43,3 +43,14 @@ function getAvg(numList) {
 list = [20, 43, 98, 13, 59, 5];
 let avg = getAvg(list);
 console.log("Avg of array: ", avg);
+
+// task:4 find the area of a quadrilateral
+function getArea(length, height) {
+  let area = length * height;
+  return area;
+}
+
+let length = 13;
+let height = 6;
+let area = getArea(length, height);
+console.log("The area of Quadrilateral: " + area);
