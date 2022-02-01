@@ -15,19 +15,15 @@ let smallNum = getSmallNum(list);
 console.log("The Small No: ", smallNum);
 
 // task:2 find small number
-let num1 = 3,
-  num2 = 9,
-  num3 = 50;
+let num1 = 30,
+  num2 = 90,
+  num3 = 5;
 
-if (num1 < num2) {
-  if (num1 < num3) {
-    console.log("Small Num: ", num1);
-  } else console.log("Small Num: ", num3);
-} else {
-  if (num2 < num3) {
-    console.log("Small Num: ", num2);
-  } else console.log("Small Num: ", num3);
-}
+if (num1 < num2 && num1 < num3) {
+  console.log("Small Num: ", num1);
+} else if (num2 < num1 && num2 < num3) {
+  console.log("Small Num: ", num2);
+} else console.log("Small Num: ", num3);
 
 // task:3 find avg from an array
 
@@ -54,3 +50,6 @@ let length = 13;
 let height = 6;
 let area = getArea(length, height);
 console.log("The area of Quadrilateral: " + area);
+
+// task: 5 find second largest number from an array
+function getSecondLargestNum(list) {}
