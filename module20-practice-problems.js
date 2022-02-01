@@ -68,5 +68,13 @@ function fibonacciNum(limit) {
     b = sum;
   }
 }
+function fibonacciNumArray(n) {
+  let fibof = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fibo[i] = fibo[i - 2] + fibo[i - 1];
+  }
+  return fibo;
+}
 
 fibonacciNum(1);
+fibonacciNumArray(6);
