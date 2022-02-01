@@ -10,7 +10,7 @@ function getSmallNum(numList) {
   return smallNum;
 }
 
-let list = [11, 13, 19, 22, 5, 1];
+let list = [11, 13, -19, 22, 5, 1];
 let smallNum = getSmallNum(list);
 console.log("The Small No: ", smallNum);
 
@@ -49,7 +49,24 @@ function getArea(length, height) {
 let length = 13;
 let height = 6;
 let area = getArea(length, height);
-console.log("The area of Quadrilateral: " + area);
+console.log("The area of Quadrilateral: ", area);
 
 // task: 5 find second largest number from an array
 function getSecondLargestNum(list) {}
+
+//extra:1 Fibonacci number
+function fibonacciNum(limit) {
+  let a = 0;
+  let b = 1;
+  console.log(a);
+  console.log(b);
+  let sum = 0;
+  for (let i = 0; i < limit - 2; i++) {
+    sum = a + b;
+    console.log(sum);
+    a = b;
+    b = sum;
+  }
+}
+
+fibonacciNum(1);
