@@ -52,7 +52,13 @@ let area = getArea(length, height);
 console.log("The area of Quadrilateral: ", area);
 
 // task: 5 find second largest number from an array
-function getSecondLargestNum(list) {}
+function getSecondLargestNum(list) {
+  let accendingOrderList = [];
+  let la;
+  for (const item of list) {
+    item > item;
+  }
+}
 
 //extra:1 Fibonacci number
 function fibonacciNum(limit) {
